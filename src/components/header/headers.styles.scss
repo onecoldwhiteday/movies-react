@@ -1,0 +1,42 @@
+.main-title {
+    text-align: start;
+    margin: 0;
+    padding: 0 30px;
+    vertical-align: middle;
+    font-size: 48px;
+    cursor: pointer;
+}
+
+.nav-btn {
+    border: none;
+    outline: none;
+    background: none;
+    position: fixed;
+    z-index: 10;
+    background: white;
+}
+
+.navbar-element:first-child {
+    position: relative;
+}
+
+.navbar-element:last-child {
+    position: relative;
+    right: 60px;
+}
+
+
+.menu-icon {
+    font-size: 48px;
+}
+
+.menu-icon:hover {
+    transform: scale(1.05);
+}
+
+.App-navbar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+

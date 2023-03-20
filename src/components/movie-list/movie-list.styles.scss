@@ -1,0 +1,13 @@
+.movie-list {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 30px;
+}
+
+.page-title {
+    font-weight: 400;
+    font-size: 64px;
+    text-align: left;
+    margin-bottom: 15px;
+}
