@@ -17,10 +17,10 @@ export const MovieCard = (props) => {
               "https://image.tmdb.org/t/p/original" +
               props.movieData.backdrop_path
                 ? `${baseImageUrl}${props.movieData.backdrop_path}`
-                : `${props.movieData.poster_path}`
+                : `../../../assets/default-poster.jpg`
             }
             alt="movie_poster.jpg"
-          ></img>
+          />
           <div className="overlay text-light">
             <div className="movie-detail">
               <span className="label text-secondary">Overview:</span>

@@ -1,4 +1,5 @@
 import { List, Search } from "react-bootstrap-icons";
+import { Link } from "react-router-dom";
 import "./headers.styles.scss";
 
 export const Header = (props) => {
@@ -12,9 +13,11 @@ export const Header = (props) => {
         </button>
       </div>
       <div className="navbar-element">
-        <h1 className="main-title text-center font-weight-bold">
-          {title.toUpperCase()}
-        </h1>
+        <Link to="/" className="main-title-link">
+          <h1 className="main-title text-center font-weight-bold">
+            {title.toUpperCase()}
+          </h1>
+        </Link>
       </div>
       <div className="navbar-element">
         <button className="nav-btn">

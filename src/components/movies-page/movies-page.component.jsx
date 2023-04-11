@@ -5,6 +5,7 @@ import { Paginator } from "../paginator/paginator.component";
 import { Sidebar } from "../sidebar/sidebar.component";
 import "./movies-page.styles.scss";
 import { useOutletContext } from "react-router-dom";
+import { Loader } from "../loader/loader.component";
 
 export const TabNamesEnum = {
   popular: "popular",
@@ -41,6 +42,7 @@ export const MoviesPage = ({ page }) => {
     API.get(pages[page].searchUrl, {
       params,
     }).then((res) => {
+      // setIsLoading(false);
       return setMovies(res.data.results);
     });
   }
@@ -48,6 +50,10 @@ export const MoviesPage = ({ page }) => {
   useEffect(() => {
     fetchMovies();
   });
+
+  if (!movies.length) {
+    return <Loader />;
+  }
 
   return (
     <div className="movies-page-container">

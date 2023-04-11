@@ -5,6 +5,9 @@
     vertical-align: middle;
     font-size: 48px;
     cursor: pointer;
+    &:hover {
+        transform: scale(1.05);
+    }
 }
 
 .nav-btn {
@@ -40,3 +43,10 @@
     margin-bottom: 70px;
 }
 
+.main-title-link {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: black;
+    }
+}
